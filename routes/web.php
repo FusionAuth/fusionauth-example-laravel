@@ -18,4 +18,4 @@ Route::post('/login', 'LoginUser');
 Route::view('/register', 'register');
 Route::post('/register', 'RegisterUser');
 Route::get('/logout', 'LogoutUser');
-Route::get('/profile', 'Profile');
+Route::view('/profile', 'profile')->middleware('auth');
