@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'login');
-Route::post('/login', 'LoginUser');
+
 Route::view('/register', 'register');
 Route::post('/register', 'RegisterUser');
-Route::get('/logout', 'LogoutUser');
+Route::view('/', 'login');
+Route::post('/login', 'LoginUser');
 Route::view('/profile', 'profile')->middleware('auth');
+Route::get('/logout', 'LogoutUser');
