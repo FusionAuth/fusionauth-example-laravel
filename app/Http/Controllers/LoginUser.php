@@ -26,9 +26,11 @@ class LoginUser extends Controller
     $clientResponse = $this->authClient->login($clientRequest);
 
     if (!$clientResponse->wasSuccessful()) {
+      session()->flash('error-message', "Uh-oh.  Try Something else");
       return redirect()->back();
     }
 
+    session()->flash('success-message', 'Welcome to our application.');
     session(['user' => (array) $clientResponse->successResponse->user]);
     return redirect('profile');
   }

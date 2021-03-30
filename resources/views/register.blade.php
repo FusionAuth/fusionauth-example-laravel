@@ -3,6 +3,7 @@
 @section('content')
 <h1>Register</h1>
 <p>Create an account in our demo app.</p>
+@include('flash-message')
 <form class="pure-form pure-form-stacked" action="/register" method="post">
   @csrf
   <label for="email">Email Address</label>

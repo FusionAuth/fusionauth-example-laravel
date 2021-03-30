@@ -3,6 +3,7 @@
 @section('content')
 <h1>Login</h1>
 <p>Enter your username and password to login.</p>
+@include('flash-message')
 <form class="pure-form pure-form-stacked" action="/login" method="post">
   @csrf
   <label for="email">Email Address</label>

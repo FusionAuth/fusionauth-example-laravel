@@ -18,6 +18,7 @@ class LogoutUser extends Controller
   {
     $this->authClient->logout(false);
     session()->flush();
+    session()->flash('You have been logged out.');
 
     return redirect('/');
   }

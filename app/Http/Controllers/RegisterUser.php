@@ -30,9 +30,11 @@ class RegisterUser extends Controller
     $clientResponse = $this->authClient->register(null, $clientRequest);
 
     if (!$clientResponse->wasSuccessful()) {
+      session()->flash('error-message', "Uh-oh.  Try Something else");
       return redirect()->back();
     }
 
+    session()->flash('success-message', 'Your account has been created. Please Login to view your profile.');
     return redirect('/');
   }
 }
