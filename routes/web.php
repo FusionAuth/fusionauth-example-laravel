@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/register', 'register');
 Route::post('/register', 'RegisterUser');
+Route::view('/', 'login');
+Route::post('/login', 'LoginUser');
