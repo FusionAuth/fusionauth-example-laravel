@@ -7,7 +7,7 @@ Read more about how to set this up and run it [HERE](https://fusionauth.io/blog/
 ## Setting up this rep
 
 1. Run `composer install` or `composer update` (depending on what the commandline says)
-1. Rename example.env to `.env`
+1. Rename `example.env` to `.env`
 1. Update `.env` file and add three keys and their appropriate value: 
     - FUSIONAUTH_APP_ID=<your_app_id>
     - FUSIONAUTH_API_KEY=<your_api_key>
