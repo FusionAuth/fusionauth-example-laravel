@@ -17,3 +17,4 @@ Route::view('/register', 'register');
 Route::post('/register', 'RegisterUser');
 Route::view('/', 'login');
 Route::post('/login', 'LoginUser');
+Route::view('/profile', 'profile')->middleware('auth');
