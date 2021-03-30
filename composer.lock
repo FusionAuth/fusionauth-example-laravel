@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3d88fa6639c9463d85260309c03bb68",
+    "content-hash": "52e654c71b9cddd3db1066957c890163",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -596,6 +596,60 @@
                 }
             ],
             "time": "2020-10-22T13:57:20+00:00"
+        },
+        {
+            "name": "fusionauth/fusionauth-client",
+            "version": "1.25.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FusionAuth/fusionauth-php-client.git",
+                "reference": "eb4c0e34940617a9aeddccdc3f1b7b0df7bae30e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FusionAuth/fusionauth-php-client/zipball/eb4c0e34940617a9aeddccdc3f1b7b0df7bae30e",
+                "reference": "eb4c0e34940617a9aeddccdc3f1b7b0df7bae30e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "9.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FusionAuth\\": "src/FusionAuth/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel DeGroff",
+                    "email": "daniel@fuaionauth.io"
+                },
+                {
+                    "name": "Brian Pontarelli",
+                    "email": "brian@fusionauth.io"
+                }
+            ],
+            "description": "FusionAuth Client written in PHP",
+            "homepage": "https://github.com/FusionAuth/fusionauth-php-client",
+            "keywords": [
+                "api",
+                "fusionauth",
+                "rest"
+            ],
+            "support": {
+                "issues": "https://github.com/FusionAuth/fusionauth-php-client/issues",
+                "source": "https://github.com/FusionAuth/fusionauth-php-client/tree/1.25.0"
+            },
+            "time": "2021-03-06T23:25:32+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
